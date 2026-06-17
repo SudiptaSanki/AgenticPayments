@@ -38,13 +38,13 @@ npm install
 ### App Architecture
 ```mermaid
 graph TD
-    subgraph Frontend Layer
+    subgraph Frontend["Frontend Layer"]
         UI["React UI (Vite)"]
         Styling["Tailwind CSS + Lucide Icons"]
         UI --- Styling
     end
 
-    subgraph Backend Layer (Node.js)
+    subgraph Backend["Backend Layer (Node.js)"]
         Server["Backend Server (server.js)"]
         Agent["AI Agent Logic (run-agent.js)"]
         Wallet["Wallet Management (setup-wallet.js)"]
