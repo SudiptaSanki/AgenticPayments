@@ -12,9 +12,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
     <div className="w-64 bg-[#fcfaf8] border-r border-[#e2d5c4] h-screen flex flex-col">
       <div className="p-6 flex items-center gap-3 border-b border-[#e2d5c4]">
-        <div className="bg-[#d97706] p-2 rounded-lg">
-          <Cpu className="text-white w-6 h-6" />
-        </div>
+        <img src="/favicon.png" alt="Agentic Pay Logo" className="w-10 h-10 rounded-lg object-cover shadow-sm" />
         <h1 className="font-bold text-xl text-[#451a03] tracking-tight">Agentic Pay</h1>
       </div>
 
