@@ -1,0 +1,21 @@
+{
+  "name": "agentic-payments-backend",
+  "version": "1.0.0",
+  "description": "x402 payment-gated API server for AgentFi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "agent": "node scripts/run-agent.js",
+    "wallet:setup": "node scripts/setup-wallet.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1"
+  }
+}

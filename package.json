@@ -1,0 +1,11 @@
+{
+  "name": "agentic-payments",
+  "private": true,
+  "scripts": {
+    "dev": "cd agentic-payments-ui && npm run dev",
+    "backend": "cd agentic-payments-ui && npm run backend",
+    "wallet:setup": "cd agentic-payments-ui && npm run wallet:setup",
+    "agent": "cd agentic-payments-ui && npm run agent",
+    "start": "cd agentic-payments-ui && run.bat"
+  }
+}
