@@ -5,7 +5,7 @@ cd /d "%~dp0"
 echo Starting Agentic Pay full stack...
 echo.
 
-start "Agentic Pay Backend (port 3000)" cmd /k "cd /d "%~dp0backend" && node server.js"
+start "Agentic Pay Backend (port 3000)" cmd /k "cd /d "%~dp0agentic-payments-ui\backend" && node server.js"
 timeout /t 2 /nobreak >nul
 start "Agentic Pay Frontend (port 5173)" cmd /k "cd /d "%~dp0" && npm run dev"
 

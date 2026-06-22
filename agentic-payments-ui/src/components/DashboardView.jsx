@@ -60,9 +60,18 @@ const DashboardView = ({ onNavigate }) => {
 
   if (!stats) {
     return (
-      <div className="flex items-center justify-center h-64 text-[#92400e]">
-        <Loader2 className="w-6 h-6 animate-spin mr-2" />
-        Loading live dashboard...
+      <div className="flex flex-col items-center justify-center h-64 text-[#92400e]">
+        {error ? (
+          <div className="text-red-600 bg-red-50 p-4 rounded-lg border border-red-200">
+            <p className="font-bold mb-1">Backend Connection Error</p>
+            <p className="text-sm">{error}</p>
+          </div>
+        ) : (
+          <>
+            <Loader2 className="w-6 h-6 animate-spin mb-2" />
+            Loading live dashboard...
+          </>
+        )}
       </div>
     );
   }
